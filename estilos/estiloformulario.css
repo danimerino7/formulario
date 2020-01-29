@@ -1,5 +1,7 @@
 body
-{ width: 1000px;height: 1020px; 
+{ width: 1000px;height: auto;
+    position: relative;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
@@ -10,28 +12,37 @@ h2{
 
 legend{
     font-weight: bold;
+    color: burlywood;
+    background-color: darkgreen;
+    border-radius: 5px;
 }
 form{
     width: 1200px;
-    border: 1px solid black;
-    background:#FaFaFa;
-    color: black;
+    border: 1px solid rgb(4, 49, 4);
+    background: rgba(35, 153, 14, 0.5  );
+    
+   
+    background-color: darkgreen;
+    
+    color: rgb(187, 255, 0);
 }
 
 fieldset{
-    background: whitesmoke;
+    
+    background: rgb(124, 158, 117);
     padding: 15px;
     margin: 20px;
     
 }
 
 label{
-    float: left;
     
+ 
 }
 input{
-    margin: 0px 10px 10px 0px;
+    margin: 0px 5px 5px 0px;
     padding: 1px;
+background: whitesmoke;
 }
 
 .contenedor{
@@ -55,7 +66,7 @@ div {
 }
 
 #obligatorios{
-    border: 1px orangered solid;
+    border: 3px rgb(187, 255, 0) solid;
 }
 
 select{
@@ -66,4 +77,38 @@ select{
 select[multiple]{
     height: 120%;
   }
+#checkboxing input{
+    margin: 0px 10px 15px 10px;
+}
 
+#archivos{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    color: black;
+}
+
+
+
+#enviar{
+    background-color: darkgreen;
+    color: burlywood;
+    border-radius: 5px;
+}
+
+#enviar:hover{
+    background-color: greenyellow;
+    color: green;
+    border-radius: 5px;
+}
+
+#reset{
+    background-color: darkgreen;
+    color: burlywood;
+    border-radius: 5px;
+}
+
+#reset:hover{
+    background-color: greenyellow;
+    color: green;
+    border-radius: 5px;
+}
