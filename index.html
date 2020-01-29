@@ -12,120 +12,121 @@
 <body>
 
     <H2>Formularios</H2>
-    <form >
+    <form>
 
         <fieldset class="PrimerFieldset">
             <legend>Datos personales</legend>
 
-      <br>
-          <label>Nombre*<input id="obligatorios" type="text" name="nombre" autofocus required></label> 
-       <label>Apellidos:<input type="text" name="apellidos" size="45px" placeholder="Los dos apellidos"></label>
-       <br>
+            <br>
+            <label>Nombre*<input id="obligatorios" type="text" name="nombre" autofocus required></label>
+            <label>Apellidos:<input type="text" name="apellidos" size="45px" placeholder="Los dos apellidos"></label>
+            <br>
+            <br>
+            <label>Edad
+                <input type="number" name="Contraseña" placeholder="25" value="18" min="18" max="65"></label>
+
+            <label> Sexo</label>
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female<br>
+
+        </fieldset>
+
+
         <br>
-        <label>Edad
-        <input type="password" name="Contraseña" placeholder="25"></label>
-      
-        <label> Sexo</label>
-        <input type="radio" name="gender" value="male" checked> Male
-        <input type="radio" name="gender" value="female"> Female<br>
-    
-       </fieldset>
+
+        <fieldset class="SegundoFieldset">
+            <legend>Datos de contacto</legend>
+            <br>
+            <label>Email*<input id="obligatorios" type="email" name="nombre" autofocus required></label>
+            <label>Dirección:<input type="text" name="apellidos" size="90%"
+                    placeholder="Calle, nº, ciudad, provincia"></label>
 
 
-       <br>
+            <div class="contenedor">
 
-       <fieldset class="SegundoFieldset">
-        <legend>Datos de contacto</legend>
-        <br>
-          <label>Email*<input id="obligatorios" type="email" name="nombre" autofocus required></label> 
-       <label>Dirección:<input type="text" name="apellidos" size="90%" placeholder="Calle, nº, ciudad, provincia"></label>
+                <div id="codigopostal">
+                    <label>Código postal
+                        <input type="number" name="codigopostal" placeholder="23711"></label>
+                </div>
+                <div id="ciudad">
+                    <label>Ciudad
+                        <input type="text" name="Contraseña"></label>
+                </div>
+                <div id="provincia">
+                    <label>Provincia
+                        <select name="provincia">
 
+                            <option value="">- selecciona -</option>
+                            <option value="15">A coruña</option>
+                            <option value="1">Álava</option>
+                            <option value="2">Albacete</option>
+                            <option value="3">Alicante</option>
+                            <option value="4">Almería</option>
+                            <option value="33">Asturias</option>
+                            <option value="5">Ávila</option>
+                            <option value="6">Badajoz</option>
+                            <option value="7">Baleares</option>
+                            <option value="8">Barcelona</option>
+                            <option value="9">Burgos</option>
+                            <option value="10">Cáceres</option>
+                            <option value="11">Cádiz</option>
+                            <option value="39">Cantabria</option>
+                            <option value="12">Castellón</option>
+                            <option value="51">Ceuta</option>
+                            <option value="13">Ciudad Real</option>
+                            <option value="14">Córdoba</option>
+                            <option value="16">Cuenca</option>
+                            <option value="99">Extranjero</option>
+                            <option value="17">Girona</option>
+                            <option value="18">Granada</option>
+                            <option value="19">Guadalajara</option>
+                            <option value="20">Guipúzcoa</option>
+                            <option value="21">Huelva</option>
+                            <option value="22">Huesca</option>
+                            <option value="23">Jaén</option>
+                            <option value="26">La rioja</option>
+                            <option value="35">Las palmas</option>
+                            <option value="24">León</option>
+                            <option value="25">Lleida</option>
+                            <option value="27">Lugo</option>
+                            <option value="28">Madrid</option>
+                            <option value="29">Málaga</option>
+                            <option value="52">Melilla</option>
+                            <option value="30">Murcia</option>
+                            <option value="31">Navarra</option>
+                            <option value="32">Ourense</option>
+                            <option value="34">Palencia</option>
+                            <option value="36">Pontevedra</option>
+                            <option value="37">Salamanca</option>
+                            <option value="38">Santa cruz de tenerife</option>
+                            <option value="40">Segovia</option>
+                            <option value="41">Sevilla</option>
+                            <option value="42">Soria</option>
+                            <option value="43">Tarragona</option>
+                            <option value="44">Teruel</option>
+                            <option value="45">Toledo</option>
+                            <option value="46">Valencia</option>
+                            <option value="47">Valladolid</option>
+                            <option value="48">Vizcaya</option>
+                            <option value="49">Zamora</option>
+                            <option value="50">Zaragoza</option>
+                        </select>
+                    </label>
+                </div>
 
-       <div class="contenedor">
+                <div id="clave">
+                    <label>Clave
+                        <input type="password">
+                    </label>
 
-        <div id="codigopostal">
-       <label>Código postal
-        <input type="number" name="codigopostal" placeholder="25"></label>
-    </div>
-    <div id="ciudad">
-        <label>Ciudad
-        <input type="text" name="Contraseña" ></label>
-    </div>
-    <div id="provincia">
-        <label>Provincia
-            <select name="provincia">
-
-                <option value="">- selecciona -</option>
-                <option value="15">A coruña</option>
-                <option value="1">Álava</option>
-                <option value="2">Albacete</option>
-                <option value="3">Alicante</option>
-                <option value="4">Almería</option>
-                <option value="33">Asturias</option>
-                <option value="5">Ávila</option>
-                <option value="6">Badajoz</option>
-                <option value="7">Baleares</option>
-                <option value="8">Barcelona</option>
-                <option value="9">Burgos</option>
-                <option value="10">Cáceres</option>
-                <option value="11">Cádiz</option>
-                <option value="39">Cantabria</option>
-                <option value="12">Castellón</option>
-                <option value="51">Ceuta</option>
-                <option value="13">Ciudad Real</option>
-                <option value="14">Córdoba</option>
-                <option value="16">Cuenca</option>
-                <option value="99">Extranjero</option>
-                <option value="17">Girona</option>
-                <option value="18">Granada</option>
-                <option value="19">Guadalajara</option>
-                <option value="20">Guipúzcoa</option>
-                <option value="21">Huelva</option>
-                <option value="22">Huesca</option>
-                <option value="23">Jaén</option>
-                <option value="26">La rioja</option>
-                <option value="35">Las palmas</option>
-                <option value="24">León</option>
-                <option value="25">Lleida</option>
-                <option value="27">Lugo</option>
-                <option value="28">Madrid</option>
-                <option value="29">Málaga</option>
-                <option value="52">Melilla</option>
-                <option value="30">Murcia</option>
-                <option value="31">Navarra</option>
-                <option value="32">Ourense</option>
-                <option value="34">Palencia</option>
-                <option value="36">Pontevedra</option>
-                <option value="37">Salamanca</option>
-                <option value="38">Santa cruz de tenerife</option>
-                <option value="40">Segovia</option>
-                <option value="41">Sevilla</option>
-                <option value="42">Soria</option>
-                <option value="43">Tarragona</option>
-                <option value="44">Teruel</option>
-                <option value="45">Toledo</option>
-                <option value="46">Valencia</option>
-                <option value="47">Valladolid</option>
-                <option value="48">Vizcaya</option>
-                <option value="49">Zamora</option>
-                <option value="50">Zaragoza</option>
-              </select>
-            </label>
-        </div>
-
-        <div id="clave">
-              <label>Clave
-              <input type="password">
-            </label>
-
-        </div>
-        </div>
+                </div>
+            </div>
 
         </fieldset>
 
         <fieldset class="TercerFieldset">
-            <legend>Datos de reserva</legend> 
-            <label>Fecha<input  type="date" name="nombre" ></label> 
+            <legend>Datos de reserva</legend>
+            <label>Fecha<input type="date" name="nombre"></label>
             <label>Hora<input type="time" name="apellidos" size="45px" placeholder="Los dos apellidos"></label>
             <label>Habitación
                 <select name="" id="">
@@ -140,32 +141,55 @@
         <fieldset class="CuartoFieldset">
             <legend>Preferencias</legend>
             <label>Frutos secos
-            <select multiple name="" id="multiple" size="5" >
+                <select multiple name="" id="multiple" size="5">
 
-                <option value="1">Albaricoques</option>
-                <option value="2">Cerezas</option>
-                <option value="3">Fresas</option>
-                <option value="4">Melocotones</option>
-                <option value="5">No lo sé</option>
-            </select>
-        
-            Refrescos
-            <input type="number" name="codigopostal" placeholder="25"></label>
+                    <option value="1">Albaricoques</option>
+                    <option value="2">Cerezas</option>
+                    <option value="3">Fresas</option>
+                    <option value="4">Melocotones</option>
+                    <option value="5">No lo sé</option>
+                </select>
 
+                Refrescos
+                <input type="number" name="codigopostal" placeholder="12"></label>
+
+            <p>Ingredientes:</p>
+            <label id="checkboxing">
+                Pimiento<input type="checkbox">
+                Champiñon<input type="checkbox">
+                Extra queso<input type="checkbox">
+                Salsa barbacoa<input type="checkbox" checked>
+
+
+            </label>
+
+            <p><label>Color<input type="color" name="colores" id=""></label></p>
+            <label>Sugerencias</label>
+            <p><textarea rows="6" cols="160"></textarea></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Varios</legend>
+
+            <label>Fotos
+                <input type="file" name="archivos" id="archivos">
+                Curriculum(PDF)<input type="file" name="" id="archivos">
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+
+
+            <input type="submit" id="enviar" value="Mandar datos">
+            <input type="reset" id="reset" value="Borrar datos">
 
 
         </fieldset>
 
 
-
-
-
     </form>
-
-
-
-
-
 
 </body>
 
